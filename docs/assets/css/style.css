@@ -20,6 +20,9 @@ header {
 header p {
     float: left;
 }
+ul {
+    list-style-type: "\2014\a0";
+}
 header ul {
     float: right;
 }
@@ -352,7 +355,7 @@ ul.psets>li>ul>li {
     list-style-type: none;
 }
 ol.referenced-list {
-    padding-left: 24px;
+    padding-left: calc(2 * var(--universal-margin));
     list-style: none;
 }
 ol.referenced-list.small {
@@ -633,6 +636,9 @@ body.terms-and-definitions aside {
     margin-top: 0;
     border: none;
     padding: 0;
+}
+body.annex h1 {
+    text-align: center;
 }
 /*
 .referenced-list .row {
